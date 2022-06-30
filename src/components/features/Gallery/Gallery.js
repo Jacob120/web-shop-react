@@ -15,6 +15,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import ReactTooltip from 'react-tooltip';
+import { Link } from 'react-router-dom';
+
 import StarsRating from '../StarsRating/StarsRating';
 import Swipe from '../../common/Swipe/Swipe';
 import {
@@ -160,13 +162,13 @@ const Gallery = () => {
               <ul>
                 {galleryCategories.map(item => (
                   <li key={item.id}>
-                    <a
-                      href='#'
+                    <Link
+                      to='#'
                       className={item.id === activeCategory ? styles.active : ''}
                       onClick={e => handleCategoryChange(e, item.id)}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -297,15 +299,15 @@ const Gallery = () => {
                   <ul>
                     {categoryProducts.slice(0, thumbnailProductsAmount).map(item => (
                       <li key={item.id}>
-                        <a
-                          href='#'
+                        <Link
+                          to='#'
                           className={
                             item.id === activeProduct ? styles.activeThumbnail : ''
                           }
                           onClick={e => handleProductChange(e, item.id)}
                         >
                           <img src={item.image} alt='chair'></img>
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>

@@ -5,6 +5,7 @@ import { getAllBrands } from '../../../redux/brandsRedux';
 import { getMediaQuery } from '../../../redux/settingsReducer';
 
 import styles from './Brands.module.scss';
+import { Link } from 'react-router-dom';
 import Button from '../../common/Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
@@ -59,9 +60,9 @@ const Brands = () => {
                   .slice(activeBrands, activeBrands + brandsAmount)
                   .map(item => (
                     <li key={item.id}>
-                      <a href='#' className={styles.activeThumbnail}>
+                      <Link to='#' className={styles.activeThumbnail}>
                         <img src={item.image} alt='brands' />
-                      </a>
+                      </Link>
                     </li>
                   ))}
               </ul>

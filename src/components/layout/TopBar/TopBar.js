@@ -3,7 +3,7 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faUser, faLock, faBars } from '@fortawesome/free-solid-svg-icons';
-
+import { Link } from 'react-router-dom';
 import styles from './TopBar.module.scss';
 
 const TopBar = () => (
@@ -13,40 +13,40 @@ const TopBar = () => (
         <div className={`col text-left ${styles.topOptions}`}>
           <ul>
             <li>
-              <a href='#'>
+              <Link to='#'>
                 USD <FontAwesomeIcon className={styles.icon} icon={faCaretDown} />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#'>
+              <Link to='#'>
                 English <FontAwesomeIcon className={styles.icon} icon={faCaretDown} />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#'>
+              <Link to='#'>
                 Help <FontAwesomeIcon className={styles.icon} icon={faCaretDown} />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         <div className={`col text-right ${styles.topMenu}`}>
           <ul>
             <li>
-              <a href='#'>
+              <Link to='#'>
                 <FontAwesomeIcon className={styles.icon} icon={faUser} />{' '}
                 <span>Login</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#'>
+              <Link to='#'>
                 <FontAwesomeIcon className={styles.icon} icon={faLock} />
                 <span>Register</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#'>
+              <Link to='#'>
                 <FontAwesomeIcon className={styles.icon} icon={faBars} />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import styles from './NewFurniture.module.scss';
 import ProductBox from '../../common/ProductBox/ProductBox';
 import Swipe from '../../common/Swipe/Swipe';
+import { Link } from 'react-router-dom';
 
 class NewFurniture extends React.Component {
   state = {
@@ -59,12 +60,13 @@ class NewFurniture extends React.Component {
     for (let i = 0; i < pagesCount; i++) {
       dots.push(
         <li key={i}>
-          <a
+          <Link
+            to='#'
             onClick={() => this.handlePageChange(i)}
             className={i === activePage ? styles.active : ''}
           >
             page {i}
-          </a>
+          </Link>
         </li>
       );
     }
@@ -98,12 +100,13 @@ class NewFurniture extends React.Component {
                   <ul>
                     {categories.map(item => (
                       <li key={item.id}>
-                        <a
+                        <Link
+                          to='#'
                           className={item.id === activeCategory ? styles.active : ''}
                           onClick={() => this.handleCategoryChange(item.id)}
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>

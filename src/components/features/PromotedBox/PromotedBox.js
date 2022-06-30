@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 //import PropTypes from 'prop-types';
 import styles from './PromotedBox.module.scss';
 import Button from '../../common/Button/Button';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faAngleLeft,
@@ -92,12 +93,13 @@ const PromotedBox = () => {
   for (let i = 0; i < pagesCount; i++) {
     dots.push(
       <li key={i}>
-        <a
+        <Link
+          to='#'
           onClick={() => handlePageChange(i)}
           className={i === activePage ? styles.active : ''}
         >
           page {i}
-        </a>
+        </Link>
       </li>
     );
   }

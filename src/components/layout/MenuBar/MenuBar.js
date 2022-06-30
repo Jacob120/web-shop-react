@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ProductSearch from '../../features/ProductSearch/ProductSearch';
-
+import { Link } from 'react-router-dom';
 import styles from './MenuBar.module.scss';
 
 const MenuBar = ({ children }) => (
@@ -29,44 +29,44 @@ const MenuBar = ({ children }) => (
               <div className='collapse navbar-collapse navbar-mobile' id='navbarNav'>
                 <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
                   <li className='nav-item'>
-                    <a className={styles.active} aria-current='page' href='#'>
+                    <Link className={styles.active} aria-current='page' to='#'>
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className='nav-item '>
-                    <a className='' href='#'>
+                    <Link className='' to='#'>
                       Furniture
-                    </a>
+                    </Link>
                   </li>
                   <li className='nav-item '>
-                    <a className='k' href='#'>
+                    <Link className='' to='#'>
                       Chair
-                    </a>
+                    </Link>
                   </li>
                   <li className='nav-item '>
-                    <a className='' href='#'>
+                    <Link className='' to='#'>
                       Table
-                    </a>
+                    </Link>
                   </li>
                   <li className='nav-item '>
-                    <a className='' href='#'>
+                    <Link className='' to='#'>
                       Sofa
-                    </a>
+                    </Link>
                   </li>
                   <li className='nav-item '>
-                    <a className='' href='#'>
+                    <Link className='' to='#'>
                       Bedroom
-                    </a>
+                    </Link>
                   </li>
                   <li className='nav-item '>
-                    <a
+                    <Link
                       className='nav-link disabled'
-                      href='#'
+                      to='#'
                       tabIndex='-1'
                       aria-disabled='true'
                     >
                       Blog
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

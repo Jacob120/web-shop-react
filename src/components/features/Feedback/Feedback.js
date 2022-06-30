@@ -3,6 +3,7 @@ import styles from './Feedback.module.scss';
 import { getAllFeedback, getFeedbackCount } from '../../../redux/feedbackRedux';
 import { useSelector } from 'react-redux';
 import Swipe from '../../common/Swipe/Swipe';
+import { Link } from 'react-router-dom';
 
 const Feedback = () => {
   const [activePage, setActivePage] = useState(0);
@@ -18,12 +19,13 @@ const Feedback = () => {
   for (let i = 0; i < pagesCount; i++) {
     dots.push(
       <li key={i}>
-        <a
+        <Link
+          to='#'
           onClick={() => handlePageChange(i)}
           className={i === activePage ? styles.active : ''}
         >
           page {i}
-        </a>
+        </Link>
       </li>
     );
   }
