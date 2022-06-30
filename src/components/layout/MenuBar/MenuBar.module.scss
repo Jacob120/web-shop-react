@@ -67,7 +67,7 @@
 @media (max-width: 540px) {
   .menu {
     flex-wrap: nowrap;
-
+    flex-direction: column;
     .searchField {
       display: flex;
       padding: 2px;
