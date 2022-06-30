@@ -75,6 +75,7 @@
     .searchField {
       input {
         font-size: 10px;
+        width: 50%;
         &::placeholder {
           font-size: 10px;
         }
@@ -87,22 +88,16 @@
   .root {
     .category {
       select {
-        font-size: 7px;
+        font-size: 10px;
       }
     }
     .searchField {
       input {
-        font-size: 7px;
+        font-size: 10px;
         &::placeholder {
-          font-size: 7px;
+          font-size: 10px;
         }
       }
     }
   }
 }
-
-// @media (max-width: 320px) {
-//   .root {
-//     padding-left: 50px;
-//   }
-// }
