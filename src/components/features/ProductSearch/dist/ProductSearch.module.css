@@ -1,0 +1,89 @@
+.font-secular {
+  font-family: "Secular One", sans-serif;
+}
+
+.root {
+  border: 1px solid #292929;
+  display: inline-flex;
+  height: 45px;
+  color: #2a2a2a;
+}
+.root .category {
+  border-right: 1px solid #292929;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.root .category .icon:first-child {
+  color: #d58e32;
+  position: absolute;
+  left: 10px;
+  z-index: 0;
+}
+.root .category .icon:last-child {
+  position: absolute;
+  right: 10px;
+  z-index: 0;
+}
+.root .category select {
+  -webkit-appearance: none;
+  border: 0;
+  background-color: transparent;
+  padding: 5px 30px 5px 35px;
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  outline: none;
+}
+.root .searchField {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.root .searchField input {
+  border: 0;
+  padding-left: 10px;
+  font-size: 14px;
+  outline: none;
+}
+.root .searchField input::placeholder {
+  color: #a4a4a4;
+  font-size: 14px;
+}
+.root .searchField button {
+  border: 0;
+  background-color: transparent;
+  outline: none;
+}
+.root .searchField button :hover {
+  color: #d58e32;
+  transition-duration: 0.05s;
+}
+
+@media (max-width: 485px) {
+  .root .category select {
+    font-size: 8px;
+  }
+  .root .searchField input {
+    font-size: 8px;
+  }
+  .root .searchField input::placeholder {
+    font-size: 8px;
+  }
+}
+@media (max-width: 375px) {
+  .root .category select {
+    font-size: 7px;
+  }
+  .root .searchField input {
+    font-size: 7px;
+  }
+  .root .searchField input::placeholder {
+    font-size: 7px;
+  }
+}
+@media (max-width: 320px) {
+  .root {
+    padding-left: 50px;
+  }
+}
