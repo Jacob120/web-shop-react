@@ -1,17 +1,16 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  position: relative;
   box-shadow: 2px 3.464px 6px $box-shadow;
   background-color: #ffffff;
 
   :global(.container) > :global(.row) {
-    height: 120px;
+    height: 84px;
   }
 
   .menu {
-    align-self: stretch;
     display: flex;
+    align-self: stretch;
 
     ul {
       margin: 0;
@@ -42,34 +41,14 @@
       &.active {
         background-color: $primary;
         color: $background-white;
-        border-color: $primary;
+        border-color: $color-black;
       }
 
       &.active {
-        border-color: $text-color;
+        background-color: $primary;
+        color: $background-white;
+        border-color: $color-black;
       }
-    }
-  }
-}
-
-@media (max-width: 994px) {
-  .menu {
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-
-    .searchField {
-      display: flex;
-      justify-content: center;
-    }
-  }
-}
-
-@media (max-width: 540px) {
-  .menu {
-    flex-wrap: nowrap;
-
-    .searchField {
-      display: flex;
     }
   }
 }

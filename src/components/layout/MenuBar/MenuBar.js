@@ -29,36 +29,36 @@ const MenuBar = ({ children }) => (
               <div className='collapse navbar-collapse navbar-mobile' id='navbarNav'>
                 <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
                   <li className='nav-item'>
-                    <a className='nav-link active' aria-current='page' href='#'>
+                    <a className={styles.active} aria-current='page' href='#'>
                       Home
                     </a>
                   </li>
-                  <li className='nav-item active'>
-                    <a className='nav-link' href='#'>
+                  <li className='nav-item '>
+                    <a className='' href='#'>
                       Furniture
                     </a>
                   </li>
-                  <li className='nav-item active'>
-                    <a className='nav-link' href='#'>
+                  <li className='nav-item '>
+                    <a className='k' href='#'>
                       Chair
                     </a>
                   </li>
-                  <li className='nav-item active'>
-                    <a className='nav-link' href='#'>
+                  <li className='nav-item '>
+                    <a className='' href='#'>
                       Table
                     </a>
                   </li>
-                  <li className='nav-item active'>
-                    <a className='nav-link' href='#'>
+                  <li className='nav-item '>
+                    <a className='' href='#'>
                       Sofa
                     </a>
                   </li>
-                  <li className='nav-item active'>
-                    <a className='nav-link' href='#'>
+                  <li className='nav-item '>
+                    <a className='' href='#'>
                       Bedroom
                     </a>
                   </li>
-                  <li className='nav-item active'>
+                  <li className='nav-item '>
                     <a
                       className='nav-link disabled'
                       href='#'
