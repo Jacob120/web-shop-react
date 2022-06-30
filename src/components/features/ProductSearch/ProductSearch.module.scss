@@ -69,14 +69,14 @@
   .root {
     .category {
       select {
-        font-size: 8px;
+        font-size: 10px;
       }
     }
     .searchField {
       input {
-        font-size: 8px;
+        font-size: 10px;
         &::placeholder {
-          font-size: 8px;
+          font-size: 10px;
         }
       }
     }
@@ -101,8 +101,8 @@
   }
 }
 
-@media (max-width: 320px) {
-  .root {
-    padding-left: 50px;
-  }
-}
+// @media (max-width: 320px) {
+//   .root {
+//     padding-left: 50px;
+//   }
+// }
