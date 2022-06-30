@@ -29,7 +29,7 @@ const SaleBox = sale_img => {
             </div>
             <div className={styles.bottom_inner}>
               <div className={styles.overlay_bottom}>
-                <img src='./images/sales/promotion-bed.jpg' alt='sale' />
+                <img src='./images/dining/dining-8.jpg' alt='sale' />
               </div>
               <p className={styles.bottomSale_text}>
                 <strong>SPECIAL</strong> COLLECTION

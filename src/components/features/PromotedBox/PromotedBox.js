@@ -64,29 +64,29 @@ const PromotedBox = () => {
   //autoplay for left slider
   const timeoutRef = useRef(null);
 
-  useEffect(() => {
-    setTimeout(() => setActivateFade(''), 250);
+  // useEffect(() => {
+  //   setTimeout(() => setActivateFade(''), 250);
 
-    timeoutRef.current = setTimeout(() => {
-      setTimeout(() => {
-        setActivePage(prevIndex =>
-          prevIndex === hotDealsData.length - 1 ? 0 : prevIndex + 1
-        );
-      }, 250);
-      setActivateFade('left');
-    }, delay);
+  //   timeoutRef.current = setTimeout(() => {
+  //     setTimeout(() => {
+  //       setActivePage(prevIndex =>
+  //         prevIndex === hotDealsData.length - 1 ? 0 : prevIndex + 1
+  //       );
+  //     }, 250);
+  //     setActivateFade('left');
+  //   }, delay);
 
-    if (delay === 10000) {
-      setDelay(3000);
-    }
+  //   if (delay === 10000) {
+  //     setDelay(3000);
+  //   }
 
-    return () => {
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activePage]);
+  //   return () => {
+  //     if (timeoutRef.current) {
+  //       clearTimeout(timeoutRef.current);
+  //     }
+  //   };
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [activePage]);
 
   const dots = [];
   for (let i = 0; i < pagesCount; i++) {

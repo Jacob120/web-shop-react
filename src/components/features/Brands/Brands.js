@@ -20,10 +20,10 @@ const Brands = () => {
       setBrandsAmount(6);
     }
     if (mediaQuery === 'tablet') {
-      setBrandsAmount(5);
+      setBrandsAmount(2);
     }
     if (mediaQuery === 'mobile') {
-      setBrandsAmount(4);
+      setBrandsAmount(2);
     }
   }, [mediaQuery]);
 
@@ -55,13 +55,15 @@ const Brands = () => {
             </Button>
             <div className={styles.thumbnailMenu}>
               <ul>
-                {allBrands.slice(activeBrands, activeBrands + 6).map(item => (
-                  <li key={item.id}>
-                    <a href='#' className={styles.activeThumbnail}>
-                      <img src={item.image} alt='brands' />
-                    </a>
-                  </li>
-                ))}
+                {allBrands
+                  .slice(activeBrands, activeBrands + brandsAmount)
+                  .map(item => (
+                    <li key={item.id}>
+                      <a href='#' className={styles.activeThumbnail}>
+                        <img src={item.image} alt='brands' />
+                      </a>
+                    </li>
+                  ))}
               </ul>
             </div>
             <Button

@@ -91,7 +91,7 @@ const Gallery = () => {
   useEffect(() => {
     if (mediaQuery === 'desktop') setThumbnailProductsAmount(6);
     if (mediaQuery === 'tablet') setThumbnailProductsAmount(5);
-    if (mediaQuery === 'mobile') setThumbnailProductsAmount(4);
+    if (mediaQuery === 'mobile') setThumbnailProductsAmount(3);
   }, [mediaQuery]);
 
   const handleRight = e => {
