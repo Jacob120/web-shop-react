@@ -8,8 +8,12 @@ import styles from './MenuBar.module.scss';
 const MenuBar = ({ children }) => (
   <div className={styles.root}>
     <div className='container mb-5'>
-      <div className={'row align-items-center  ' + styles.menu}>
-        <div className={'col ' + styles.searchField}>
+      <div
+        className={
+          'row align-items-center justify-content-around text-center ' + styles.menu
+        }
+      >
+        <div className={'col-auto ' + styles.searchField}>
           <ProductSearch />
         </div>
         <div className={'col-auto' + styles.mobile_menu}>
