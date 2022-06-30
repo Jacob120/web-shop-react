@@ -13,7 +13,7 @@ const MenuBar = ({ children }) => (
           <ProductSearch />
         </div>
         <div className={'col-auto' + styles.mobile_menu}>
-          <nav className={'navbar navbar-expand-sm navbar-light bg-none'}>
+          <nav className={'navbar navbar-expand-sm navbar-light bg-none p-0'}>
             <div className='container-fluid'>
               <button
                 className='navbar-toggler'
