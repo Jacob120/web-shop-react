@@ -119,8 +119,9 @@
     flex-wrap: nowrap;
     flex-direction: column;
     width: 100%;
-    justify-content: space-around;
+
     .searchField {
+      width: 50%;
       display: flex;
       padding: 2px;
     }
