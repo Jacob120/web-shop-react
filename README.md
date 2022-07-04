@@ -64,7 +64,7 @@ Each time when you commit changes with `git commit` script starts unit tests, fo
 
 * [sbjohansen](https://github.com/sbjohansen)
 * [sicArchitect](https://github.com/sicArchitect)
-* [Jakob20](https://github.com/Jacob120)
+* [Jacob20](https://github.com/Jacob120)
 * [KacperWielgosz](https://github.com/KacperWielgosz)
 
 Under supervision of [KamilWilk95](https://github.com/kamilwilk95)
